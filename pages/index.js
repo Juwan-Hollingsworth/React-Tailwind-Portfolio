@@ -7,6 +7,12 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
+import spark from "../public/spark.png";
+import gpt3 from "../public/gpt3.png";
+import bank from "../public/hsfinancial.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   return (
@@ -21,7 +27,7 @@ export default function Home() {
         <section className="  min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <a
-              className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8"
+              className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8 font-lato"
               href="#"
             >
               Spark Social
@@ -33,7 +39,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8 font-lato"
                   href="#"
                 >
                   Resume
@@ -52,12 +58,111 @@ export default function Home() {
             <h3 className="text-2xl py-2 text-white font-lato mt-[-25px]">
               Developer and Designer.
             </h3>
-            <p className="text-white font-lato">text here maybe</p>
+            <p className="text-white font-lato">Atlanta, GA 📍</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
+          </div>
+        </section>
+        {/* About Section */}
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 font-lato text-white">
+              Meet the developer,
+            </h3>
+            <p className="text-md py-2 leading-8 text-white">
+              Hi there, I'm Juwan, a{" "}
+              <span className="text-yellow-400">software engineer</span> and
+              college graduate with a bachelor's in{" "}
+              <span className="text-yellow-400">Computer Science</span>. I'm
+              passionate about{" "}
+              <span className="text-yellow-400">
+                creating things that live on the web
+              </span>
+              , and I've had some pretty cool experiences along the way. My
+              journey began back in high school when I ran a sneaker business
+              and discovered firsthand how digital implementation can transform
+              a business. From there, I taught myself Dreamweaver and continued
+              to build my coding skills. While studying biology and computer
+              science at Clayton State University, I've been fortunate enough to
+              work with some big names in Atlanta such as COX Automotive,
+              MailChimp, and Spark Social. These days, my primary focus is on
+              creating digital experiences and products that are accessible and
+              inclusive for a wide range of clients.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                style={{ display: "inline" }}
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2 text-white">
+                Beautiful Designs
+              </h3>
+              <p className="py-2 text-white">
+                creating elegant designs suited for your needs following core
+                design principles.{" "}
+              </p>
+              <h4 className="py-4 text-yellow-400">
+                Technology I've worked with recently:
+              </h4>
+              <p className="text-grey-800 py-1 text-white">Javascript</p>
+              <p className="text-grey-800 py-1 text-white">React</p>
+              <p className="text-grey-800 py-1 text-white">Postgres</p>
+              <p className="text-grey-800 py-1 text-white">Next.js</p>
+              <p className="text-grey-800 py-1 text-white">Python</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                style={{ display: "inline" }}
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                creating elegant designs suited for your needs following core
+                design principles.{" "}
+              </p>
+              <h4 className="py-4 text-yellow-400">
+                Technology I've worked with recently:
+              </h4>
+              <p className="text-grey-800 py-1">Javascript</p>
+              <p className="text-grey-800 py-1">React</p>
+              <p className="text-grey-800 py-1">Postgres</p>
+              <p className="text-grey-800 py-1">Next.js</p>
+              <p className="text-grey-800 py-1">Python</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl mt-10 mx-auto">
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                style={{ display: "inline" }}
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                creating elegant designs suited for your needs following core
+                design principles.{" "}
+              </p>
+              <h4 className="py-4 text-yellow-400">
+                Technology I've worked with recently:
+              </h4>
+              <p className="text-grey-800 py-1">Javascript</p>
+              <p className="text-grey-800 py-1">React</p>
+              <p className="text-grey-800 py-1">Postgres</p>
+              <p className="text-grey-800 py-1">Next.js</p>
+              <p className="text-grey-800 py-1">Python</p>
+            </div>
           </div>
         </section>
       </main>

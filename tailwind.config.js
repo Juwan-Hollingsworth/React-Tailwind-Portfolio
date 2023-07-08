@@ -5,7 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        burtons: "burtons",
+        libre: "libre baskerville",
+        lato: "lato",
+      },
+      colors: {
+        bluetone: "#1fb0d8",
+        orangetone: "#e9c822",
+      },
+    },
   },
   plugins: [],
 };

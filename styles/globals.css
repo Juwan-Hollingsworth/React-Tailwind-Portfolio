@@ -23,3 +23,13 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+@font-face {
+  font-family: "libre baskerville";
+  src: url("/LibreBaskerville-Italic.ttf");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("/Lato-Regular.ttf");
+}

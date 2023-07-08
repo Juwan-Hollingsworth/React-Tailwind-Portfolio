@@ -1,4 +1,13 @@
 import Head from "next/head";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+} from "react-icons/ai";
+import Image from "next/image";
+import avatar from "../public/avatar.png";
+
 export default function Home() {
   return (
     <div>
@@ -8,9 +17,48 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <section className=" bg-blue-700 min-h-screen">
-          <h1>hello</h1>
+      <main className="bg-bluetone px-10 ">
+        <section className="  min-h-screen">
+          <nav className="py-10 mb-12 flex justify-between">
+            <a
+              className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8"
+              href="#"
+            >
+              Spark Social
+            </a>
+
+            <ul className=" flex items-center">
+              <li className="text-white">
+                <BsFillMoonStarsFill className="cursor-pointer text-xl" />
+              </li>
+              <li>
+                <a
+                  className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div className="text-center p-10 ">
+            <h2 className="text-5xl py-2 text-white font-libre medium mt-[-50px] ">
+              Juwan Hollingsworth
+            </h2>
+            <div className="relative mx-auto mt-[-50px] ">
+              <Image src={avatar} />
+            </div>
+            <h3 className="text-2xl py-2 text-white font-lato mt-[-25px]">
+              Developer and Designer.
+            </h3>
+            <p className="text-white font-lato">text here maybe</p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+            <AiFillYoutube />
+          </div>
         </section>
       </main>
     </div>

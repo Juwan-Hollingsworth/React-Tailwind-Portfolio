@@ -27,9 +27,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-navybl px-10 ">
+      <main className="bg-navybl px-10">
         <section className="  min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
             <a
               className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8 font-lato"
               href="#"
@@ -53,28 +53,28 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-white font-libre medium mt-[-50px] ">
+            <h2 className="text-5xl py-2 text-white font-libre medium -mt-20 ">
               Juwan Hollingsworth
             </h2>
-            <div className="relative mx-auto mt-[-50px]  ">
+            <div className="relative mx-auto -mt-16  ">
               <Image
                 src={avatar}
                 className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain"
               />
             </div>
-            <h3 className="text-2xl py-2 text-white font-lato mt-[-25px]">
+            <h3 className="text-2xl py-2 text-white font-lato -mt-16">
               Developer and Designer.
             </h3>
             <p className="text-white text-md font-lato">Atlanta, GA 📍</p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300 mt-[-16px]">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
         </section>
         {/* About Section */}
-        <section>
+        <section className="py-10 pt-20">
           <h1 class="text-3xl md:text-4xl mb-4 text-white text-center">
             Meet the developer 👋🏾,
           </h1>
@@ -106,7 +106,8 @@ export default function Home() {
           </div>
           <div></div>
         </section>
-        <section>
+        {/* portfolio */}
+        <section className="py-10 pt-20">
           <div>
             <div class="portfolio-2 py-6 md:py-12">
               <div class="container px-4 mx-auto">
@@ -258,6 +259,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Resume */}
         <section>
           <div className="text-center shadow-lg p-10 rounded-xl mt-10 mx-auto">
             <div className="flex items-center justify-center">
@@ -281,7 +283,7 @@ export default function Home() {
           </div>
         </section>
         {/* contact section */}
-        <section>
+        <section className="py-10 pt-10">
           <div>
             <div className="flex items-center justify-center mt-8 font-lato text-white">
               <h3 className="text-3xl py-1 font-lato text-white">
@@ -290,16 +292,16 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               {" "}
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-lg">
                 Email 📩
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-lg">
                 LinkedIn 👨🏾‍💻
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-lg">
                 Github 👾
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4 text-lg">
                 Spark ⚡️
               </button>
             </div>
@@ -310,7 +312,7 @@ export default function Home() {
           <div className="py-10">
             <div>
               <ul className="text-white">
-                <li>footer</li>
+                <li></li>
               </ul>
             </div>
           </div>

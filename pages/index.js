@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </section>
         {/* About Section */}
-        <section className="py-10 pt-20">
+        <section className="py-10 pt-40">
           <h1 class="text-3xl md:text-4xl mb-4 text-white text-center">
             Meet the developer 👋🏾,
           </h1>
@@ -107,7 +107,7 @@ export default function Home() {
           <div></div>
         </section>
         {/* portfolio */}
-        <section className="py-10 pt-20">
+        <section className="py-10 pt-10">
           <div>
             <div class="portfolio-2 py-6 md:py-12">
               <div class="container px-4 mx-auto">
@@ -292,16 +292,16 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               {" "}
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-lg">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl">
                 Email 📩
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-lg">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-3xl">
                 LinkedIn 👨🏾‍💻
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-lg">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-3xl">
                 Github 👾
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4 text-lg">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4 text-3xl">
                 Spark ⚡️
               </button>
             </div>

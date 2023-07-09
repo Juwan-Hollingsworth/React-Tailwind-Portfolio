@@ -16,6 +16,7 @@ import consulting from "../public/consulting.png";
 import metrix from "..//public/metrix.png";
 import game from "..//public/game.png";
 import cloth from "..//public/cloth.png";
+import pfp from "..//public/juwan.jpg";
 
 export default function Home() {
   return (
@@ -71,10 +72,14 @@ export default function Home() {
         </section>
         {/* About Section */}
         <section>
-          <div>
-            <h3 className="text-3xl py-1 font-lato text-white">
-              Meet the developer 👋🏾,
-            </h3>
+          <h1 class="text-3xl md:text-4xl mb-4 text-white text-center">
+            Meet the developer 👋🏾,
+          </h1>
+          <div className="flex flex-col md:flex-row justify-center">
+            <span className="mr-4 py-3">
+              <Image src={pfp} className="rounded-lg " />
+            </span>
+
             <p className="text-md py-2 leading-8 text-white font-lato">
               Hi there, I'm Juwan, a{" "}
               <span className="text-yellow-400">software engineer</span> and
@@ -274,7 +279,9 @@ export default function Home() {
         <section>
           <div>
             <div className="flex items-center justify-center mt-8 font-lato text-white">
-              <h2>Let's Connect 📶</h2>
+              <h3 className="text-3xl py-1 font-lato text-white">
+                Let's Connect 📶
+              </h3>
             </div>
             <div>
               {" "}

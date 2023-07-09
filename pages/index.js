@@ -62,7 +62,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 text-white font-lato mt-[-25px]">
               Developer and Designer.
             </h3>
-            <p className="text-white font-lato">Atlanta, GA 📍</p>
+            <p className="text-white text-md font-lato">Atlanta, GA 📍</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
             <AiFillTwitterCircle />
@@ -113,7 +113,7 @@ export default function Home() {
                     <h1 class="text-3xl md:text-4xl mb-4 text-white">
                       Projects I've worked on 👾
                     </h1>
-                    <p class="text-xl font-lato text-white">
+                    <p class="text-md font-lato text-white">
                       A collection of impactful projects that I have worked on
                       throughout my software engineering journey. From
                       innovative web applications to robust software solutions,
@@ -145,7 +145,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Duda Agency Site
                         </h5>
-                        <p class="text-gray-600">
+                        <p class=" text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -165,7 +165,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Responsive GPT3 Site
                         </h5>
-                        <p class="text-gray-600">
+                        <p class="text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -185,7 +185,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Banking Application
                         </h5>
-                        <p class="text-gray-600">
+                        <p class="text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -205,7 +205,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Social Media Metrics
                         </h5>
-                        <p class="text-gray-600">
+                        <p class="text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -225,7 +225,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           In-Browser Game
                         </h5>
-                        <p class="text-gray-600">
+                        <p class="text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -245,7 +245,7 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           email landing page
                         </h5>
-                        <p class="text-gray-600">
+                        <p class="text-md text-gray-600">
                           HTML,CSS,JavaScript,React,Next.js
                         </p>
                       </div>
@@ -270,7 +270,9 @@ export default function Home() {
             <h3 className="text-lg font-medium pt-8 pb-2 text-white">
               Looking for a full stack engineer?
             </h3>
-            <p className="py-2 text-white">Snag a copy of my resume 😉 </p>
+            <p className="py-2 text-white text-md">
+              Snag a copy of my resume 😉{" "}
+            </p>
             <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
               View Resume
             </button>
@@ -283,20 +285,20 @@ export default function Home() {
                 Let's Connect 📶
               </h3>
             </div>
-            <div>
+            <div className="flex flex-col items-center">
               {" "}
-              <p className="text-white border-2 border-white rounded-lg px-10 py-5 my-5">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
                 Email 📩
-              </p>
-              <p className="text-white border-2 border-white rounded-lg py-5 my-5">
+              </button>
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
                 LinkedIn 👨🏾‍💻
-              </p>
-              <p className="text-white border-2 border-white rounded-lg py-5 my-5">
+              </button>
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
                 Github 👾
-              </p>
-              <p className="text-white border-2 border-white rounded-lg py-5 mt-5">
+              </button>
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
                 Spark ⚡️
-              </p>
+              </button>
             </div>
           </div>
         </section>

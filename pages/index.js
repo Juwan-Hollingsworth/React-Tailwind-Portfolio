@@ -56,8 +56,11 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-white font-libre medium mt-[-50px] ">
               Juwan Hollingsworth
             </h2>
-            <div className="relative mx-auto mt-[-50px] ">
-              <Image src={avatar} />
+            <div className="relative mx-auto mt-[-50px]  ">
+              <Image
+                src={avatar}
+                className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain"
+              />
             </div>
             <h3 className="text-2xl py-2 text-white font-lato mt-[-25px]">
               Developer and Designer.
@@ -103,7 +106,6 @@ export default function Home() {
           </div>
           <div></div>
         </section>
-
         <section>
           <div>
             <div class="portfolio-2 py-6 md:py-12">
@@ -278,6 +280,7 @@ export default function Home() {
             </button>
           </div>
         </section>
+        {/* contact section */}
         <section>
           <div>
             <div className="flex items-center justify-center mt-8 font-lato text-white">
@@ -296,9 +299,19 @@ export default function Home() {
               <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
                 Github 👾
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4">
                 Spark ⚡️
               </button>
+            </div>
+          </div>
+        </section>
+        {/* footer section */}
+        <section>
+          <div className="py-10">
+            <div>
+              <ul className="text-white">
+                <li>footer</li>
+              </ul>
             </div>
           </div>
         </section>

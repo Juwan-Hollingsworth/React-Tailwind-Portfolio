@@ -10,6 +10,7 @@ module.exports = {
         burtons: "burtons",
         libre: "libre baskerville",
         lato: "lato",
+        latoBold: "lato-bold",
       },
       colors: {
         bluetone: "#1fb0d8",

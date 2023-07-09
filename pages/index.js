@@ -31,7 +31,7 @@ export default function Home() {
         <section className="  min-h-screen">
           <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
             <a
-              className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8 font-lato"
+              className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-lato"
               href="#"
             >
               Spark Social
@@ -43,7 +43,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-yellow-400 text-white px-4 py-2 rounded-md ml-8 font-lato"
+                  className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-lato "
                   href="#"
                 >
                   Resume
@@ -62,7 +62,7 @@ export default function Home() {
                 className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain"
               />
             </div>
-            <h3 className="text-2xl py-2 text-white font-lato -mt-16">
+            <h3 className="text-2xl py-2 text-white font-lato -mt-16 font-latoBold">
               Developer and Designer.
             </h3>
             <p className="text-white text-md font-lato">Atlanta, GA 📍</p>
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         {/* About Section */}
         <section className="py-10 pt-40">
-          <h1 class="text-3xl md:text-4xl mb-4 text-white text-center">
+          <h1 class="text-3xl md:text-4xl mb-4 text-white text-center font-latoBold">
             Meet the developer 👋🏾,
           </h1>
           <div className="flex flex-col md:flex-row justify-center">
@@ -106,14 +106,14 @@ export default function Home() {
           </div>
           <div></div>
         </section>
-        {/* portfolio */}
+        {/* portfolio section */}
         <section className="py-10 pt-10">
           <div>
             <div class="portfolio-2 py-6 md:py-12">
               <div class="container px-4 mx-auto">
                 <div class="md:flex md:justify-center">
                   <div class="md:w-10/12 xl:w-8/12 text-center">
-                    <h1 class="text-3xl md:text-4xl mb-4 text-white">
+                    <h1 class="text-3xl md:text-4xl mb-4 text-white font-latoBold">
                       Projects I've worked on 👾
                     </h1>
                     <p class="text-md font-lato text-white">
@@ -124,10 +124,10 @@ export default function Home() {
                       bring to the table.
                     </p>
                     <div class="mt-6">
-                      <button class="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-indigo-700 text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+                      <button class="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
                         View Portfolio
                       </button>
-                      <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+                      <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
                         Get in Touch
                       </button>
                     </div>
@@ -259,7 +259,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Resume */}
+        {/* Resume  section*/}
         <section>
           <div className="text-center shadow-lg p-10 rounded-xl mt-10 mx-auto">
             <div className="flex items-center justify-center">
@@ -271,13 +271,13 @@ export default function Home() {
               />
               <h1 className="text-8xl text-white">+ 👨🏾‍💻</h1>
             </div>
-            <h3 className="text-lg font-medium pt-8 pb-2 text-white">
+            <h3 className="text-lg pt-8 pb-2 text-white font-latoBold">
               Looking for a full stack engineer?
             </h3>
-            <p className="py-2 text-white text-md">
+            <p className="py-2 text-white text-md font-lato">
               Snag a copy of my resume 😉{" "}
             </p>
-            <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4">
+            <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
               View Resume
             </button>
           </div>
@@ -286,22 +286,22 @@ export default function Home() {
         <section className="py-10 pt-10">
           <div>
             <div className="flex items-center justify-center mt-8 font-lato text-white">
-              <h3 className="text-3xl py-1 font-lato text-white">
+              <h3 className="text-3xl py-1 font-latoBold text-white">
                 Let's Connect 📶
               </h3>
             </div>
             <div className="flex flex-col items-center">
               {" "}
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
                 Email 📩
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-3xl">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
                 LinkedIn 👨🏾‍💻
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 text-3xl">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
                 Github 👾
               </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-4 text-3xl">
+              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-6 text-3xl font-latoBold">
                 Spark ⚡️
               </button>
             </div>
@@ -311,8 +311,8 @@ export default function Home() {
         <section>
           <div className="py-10">
             <div>
-              <ul className="text-white">
-                <li></li>
+              <ul className="text-white text-center text-md font-lato ">
+                <li className="cursor-pointer">Back to the top</li>
               </ul>
             </div>
           </div>

@@ -27,11 +27,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-navybl px-10">
+      <main className="bg-navybl px-10 overflow-x-hidden">
         <section className="  min-h-screen">
           <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
             <a
-              className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-lato"
+              className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-latoBold"
               href="#"
             >
               Spark Social
@@ -43,7 +43,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-lato "
+                  className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-latoBold "
                   href="#"
                 >
                   Resume
@@ -53,10 +53,14 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-white font-libre medium -mt-20 ">
-              Juwan Hollingsworth
-            </h2>
-            <div className="relative mx-auto -mt-16  ">
+            <div className="flex justify-center">
+              <div>
+                <h2 className="text-5xl py-2 text-white font-libre medium -mt-20  text-center">
+                  Juwan Hollingsworth
+                </h2>
+              </div>
+            </div>
+            <div className="relative mx-auto -mt-16 ">
               <Image
                 src={avatar}
                 className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain"

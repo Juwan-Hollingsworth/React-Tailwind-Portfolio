@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xsm: "350px",
+    },
     extend: {
       fontFamily: {
         burtons: "burtons",

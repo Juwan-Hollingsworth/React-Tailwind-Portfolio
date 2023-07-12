@@ -54,19 +54,19 @@ export default function Home() {
 
           <div className="text-center p-10 ">
             <div className="flex justify-center">
-              <div>
-                <h2 className="text-5xl py-2 text-white font-libre medium -mt-20  text-center">
+              <div className="sm:pt-2 pb-10">
+                <h2 className="text-5xl py-2  text-white font-libre medium -mt-20  text-center">
                   Juwan Hollingsworth
                 </h2>
               </div>
             </div>
-            <div className="relative mx-auto -mt-16 ">
+            <div className="relative mx-auto -mt-16  ">
               <Image
                 src={avatar}
-                className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain"
+                className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain "
               />
             </div>
-            <h3 className="text-2xl py-2 text-white font-lato -mt-16 font-latoBold">
+            <h3 className="text-2xl py-2 text-white font-lato  md:-mt-16 lg:-mt-16 font-latoBold">
               Developer and Designer.
             </h3>
             <p className="text-white text-md font-lato">Atlanta, GA 📍</p>

@@ -31,7 +31,7 @@ export default function Home() {
         <section className="  min-h-screen">
           <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
             <a
-              className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-latoBold"
+              className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md md:ml-8 lg:ml-8 font-latoBold"
               href="#"
             >
               Spark Social

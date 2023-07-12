@@ -273,7 +273,9 @@ export default function Home() {
                 height={100}
                 style={{ display: "inline" }}
               />
-              <h1 className="text-8xl text-white">+ 👨🏾‍💻</h1>
+              <h1 className="md:text-8xl lg:text-8xl xsm:text-6xl text-white">
+                + 👨🏾‍💻
+              </h1>
             </div>
             <h3 className="text-lg pt-8 pb-2 text-white font-latoBold">
               Looking for a full stack engineer?

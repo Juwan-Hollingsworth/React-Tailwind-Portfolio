@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className="bg-navybl px-10 overflow-x-hidden">
         <section className="  min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
+          <nav className="py-10 mb-12 flex justify-between mt-[-20px] lg:mt-[-20px]">
             <a
               className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md md:ml-8 lg:ml-8 font-latoBold"
               href="https://www.sparksocial.agency/"
@@ -57,23 +57,23 @@ export default function Home() {
           <div className="text-center p-10 ">
             <div className="flex justify-center">
               <div className="sm:pt-2 pb-10">
-                <h2 className="text-5xl py-2  text-white font-libre medium -mt-20  text-center">
+                <h2 className="text-5xl py-2  text-white font-libre medium -mt-20  text-center lg:-mt-32">
                   Juwan Hollingsworth
                 </h2>
               </div>
             </div>
-            <div className="relative mx-auto -mt-16 lg:-mt-32 ">
+            <div className="relative mx-auto -mt-16 lg:-mt-40 ">
               <Image
                 src={avatar}
                 className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain "
               />
             </div>
-            <h3 className="text-2xl py-2 text-white font-lato  md:-mt-16 lg:-mt-16 font-latoBold">
+            <h3 className="text-2xl py-2 text-white font-lato  md:-mt-16 lg:-mt-10 font-latoBold ">
               Developer and Designer.
             </h3>
             <p className="text-white text-md font-lato">Atlanta, GA 📍</p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300 mt-[-16px]">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300 mt-[-30px]">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />

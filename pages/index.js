@@ -32,7 +32,9 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between mt-[-30px]">
             <a
               className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md md:ml-8 lg:ml-8 font-latoBold"
-              href="#"
+              href="https://www.sparksocial.agency/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Spark Social
             </a>
@@ -44,7 +46,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white px-4 py-2 rounded-md ml-8 font-latoBold "
-                  href="#"
+                  href="#resume"
                 >
                   Resume
                 </a>
@@ -264,7 +266,7 @@ export default function Home() {
           </div>
         </section>
         {/* Resume  section*/}
-        <section>
+        <section id="resume">
           <div className="text-center shadow-lg p-10 rounded-xl mt-10 mx-auto">
             <div className="flex items-center justify-center">
               <Image

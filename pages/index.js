@@ -62,7 +62,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="relative mx-auto -mt-16  ">
+            <div className="relative mx-auto -mt-16 lg:-mt-32 ">
               <Image
                 src={avatar}
                 className=" w-full h-auto sm:max-h-[600px] md:max-h-[600px] object-contain "
@@ -131,10 +131,10 @@ export default function Home() {
                     </p>
                     <div class="mt-6">
                       <button class="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
-                        View Portfolio
+                        <a href="#portfolio">View Portfolio</a>
                       </button>
                       <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
-                        Get in Touch
+                        <a href="#contact">Get in Touch</a>
                       </button>
                     </div>
                   </div>
@@ -145,6 +145,7 @@ export default function Home() {
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
+                          id="portfolio"
                           src={spark}
                           className="max-w-full h-auto rounded-lg"
                         />
@@ -291,7 +292,7 @@ export default function Home() {
           </div>
         </section>
         {/* contact section */}
-        <section className="py-10 pt-10">
+        <section className="py-10 pt-10" id="contact">
           <div>
             <div className="flex items-center justify-center mt-8 font-lato text-white">
               <h3 className="text-3xl py-1 font-latoBold text-white">

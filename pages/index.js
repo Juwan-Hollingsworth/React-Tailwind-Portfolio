@@ -141,7 +141,7 @@ export default function Home() {
                 </div>
 
                 <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="spark" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -155,14 +155,57 @@ export default function Home() {
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Duda Agency Site
                         </h5>
-                        <p class=" text-md text-gray-600">
-                          HTML,CSS,JavaScript,React,Next.js
+                        <div className="flex">
+                          {" "}
+                          <ul
+                            id="portfolio_skills"
+                            className="list-none flex flex-wrap gap-4"
+                          >
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
+                                <span className="text-gray-500">HTML</span>
+                              </div>
+                            </li>
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
+                                <span className="text-gray-500">CSS</span>
+                              </div>
+                            </li>
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
+                                <span className="text-gray-500">
+                                  UI/UX DESIGN
+                                </span>
+                              </div>
+                            </li>
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
+                                <span className="text-gray-500">Analytics</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <p class=" text-sm text-gray-600 text-white">
+                          Developed a marketing agency website from scratch,
+                          taking charge of the user interface design and
+                          creating all the web pages. I also handled the
+                          copywriting, ensuring compelling and engaging content
+                          throughout the site. I also created effective landing
+                          pages to maximize conversions and integrated secure
+                          and seamless payment channels for a smooth customer
+                          experience. This project showcased my skills in both
+                          software engineering and marketing, making it a
+                          valuable addition to my portfolio.
                         </p>
+                        <button className="text-white float-right">
+                          View Live Site
+                        </button>
                       </div>
                     </div>
                   </div>
 
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="gpt3" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -182,7 +225,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="bank" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -202,7 +245,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="metrix" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -222,7 +265,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="game" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -242,7 +285,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                  <div id="cloth" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image

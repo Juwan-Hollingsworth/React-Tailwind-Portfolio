@@ -130,10 +130,10 @@ export default function Home() {
                       bring to the table.
                     </p>
                     <div class="mt-6">
-                      <button class="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
+                      <button class="bg-yellow-400 border-2 border-solid border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-latoBold">
                         <a href="#portfolio">View Portfolio</a>
                       </button>
-                      <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
+                      <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-latoBold">
                         <a href="#contact">Get in Touch</a>
                       </button>
                     </div>
@@ -198,7 +198,7 @@ export default function Home() {
                           impactful designs that elevate a brand's online
                           presence.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>
@@ -237,13 +237,13 @@ export default function Home() {
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
                                 <span className="text-gray-500">
-                                  UI/UX DESIGN
+                                  Javascript
                                 </span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
+                                <span className="text-gray-500">React</span>
                               </div>
                             </li>
                           </ul>
@@ -260,7 +260,7 @@ export default function Home() {
                           design ensures an optimal viewing experience across
                           various devices.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>
@@ -299,13 +299,13 @@ export default function Home() {
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
                                 <span className="text-gray-500">
-                                  UI/UX DESIGN
+                                  Javascript
                                 </span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
+                                <span className="text-gray-500">React</span>
                               </div>
                             </li>
                           </ul>
@@ -321,7 +321,7 @@ export default function Home() {
                           front-end development and demonstrates my ability to
                           create robust and interactive applications.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>
@@ -360,13 +360,18 @@ export default function Home() {
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
                                 <span className="text-gray-500">
-                                  UI/UX DESIGN
+                                  Javascript
                                 </span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
+                                <span className="text-gray-500">Express</span>
+                              </div>
+                            </li>
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm ">
+                                <span className="text-gray-500">Postgres</span>
                               </div>
                             </li>
                           </ul>
@@ -383,7 +388,7 @@ export default function Home() {
                           empower individuals and businesses to optimize their
                           social media strategies for maximum impact.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>
@@ -444,7 +449,7 @@ export default function Home() {
                           responsive user interfaces, while the back-end powered
                           by Node.js handles the game logic and data management.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>
@@ -505,7 +510,7 @@ export default function Home() {
                           management of the submitted emails for future
                           communication or analysis.
                         </p>
-                        <button className="text-white float-right">
+                        <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
                       </div>

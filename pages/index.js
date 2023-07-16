@@ -556,18 +556,38 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               {" "}
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
+              <a
+                href="mailto:jhollingsworth5@student.clayton.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold"
+              >
                 Email 📩
-              </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/juwan-hollingsworth-8a8b48a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold"
+              >
                 LinkedIn 👨🏾‍💻
-              </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold">
+              </a>
+              <a
+                href="https://github.com/Juwan-Hollingsworth"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-6 text-3xl font-latoBold"
+              >
                 Github 👾
-              </button>
-              <button class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-6 text-3xl font-latoBold">
+              </a>
+              <a
+                href="https://www.sparksocial.agency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border-2 border-solid border-white text-white hover:border-yellow-400 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 my-2 mt-6 text-3xl font-latoBold"
+              >
                 Spark ⚡️
-              </button>
+              </a>
             </div>
           </div>
         </section>

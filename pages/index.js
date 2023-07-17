@@ -552,7 +552,7 @@ export default function Home() {
             <div className="py-8">
               <a
                 class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato"
-                href="https://portfolio-resume-bucket.s3.amazonaws.com/Juwan_Resume202.pdf"
+                href="https://portfolio-resume-bucket.s3.amazonaws.com/Juwan_Resume203.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

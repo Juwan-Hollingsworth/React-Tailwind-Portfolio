@@ -18,6 +18,14 @@ import game from "..//public/game.png";
 import cloth from "..//public/cloth.png";
 import pfp from "..//public/juwan.jpg";
 
+/** TODO:
+ * Create AWS S3 bucket for resume + link to site
+ * Ensure UI is compatible on all viewports
+ * Shorten descriptions and fix btn spacing (portfolio)
+ * Add modal to portfolio section - dynamic content
+ * Update live link to Spark Social
+ */
+
 export default function Home() {
   return (
     <div>
@@ -541,9 +549,16 @@ export default function Home() {
             <p className="py-2 text-white text-md font-lato">
               Snag a copy of my resume 😉{" "}
             </p>
-            <button class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato">
-              View Resume
-            </button>
+            <div className="py-8">
+              <a
+                class="border-2 border-solid border-yellow-400 text-yellow-400 hover:bg-yellow-500 hover:text-white rounded-full py-3 px-8 transition-colors duration-300 mx-2 mt-4 font-lato"
+                href="https://portfolio-resume-bucket.s3.amazonaws.com/Juwan_Resume202.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Resume
+              </a>
+            </div>
           </div>
         </section>
         {/* contact section */}

@@ -18,6 +18,7 @@ import game from "..//public/game.png";
 import cloth from "..//public/cloth.png";
 import pfp from "..//public/juwan.jpg";
 import Modal from "../components/modal/Modal";
+import crowdfunding from "..//public/crowdfunding.png";
 
 /** TODO:
  * Create AWS S3 bucket for resume + link to site
@@ -470,14 +471,14 @@ export default function Home() {
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
-                          src={cloth}
+                          src={crowdfunding}
                           className="max-w-full h-auto rounded-lg"
                         />
                         <div class="portfolio-hover"></div>
                       </div>
                       <div class="px-1 py-4">
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
-                          email landing page
+                          Web3 Blockchain Crowdfunding Platform
                         </h5>
                         <div className="flex">
                           {" "}
@@ -487,38 +488,39 @@ export default function Home() {
                           >
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
+                                <span className="text-gray-500">React</span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
                                 <span className="text-gray-500">
-                                  UI/UX DESIGN
+                                  Javascript
                                 </span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
                               <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
+                                <span className="text-gray-500">Tailwind</span>
+                              </div>
+                            </li>
+                            <li className="flex items-center py-1">
+                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
+                                <span className="text-gray-500">Thirdweb</span>
                               </div>
                             </li>
                           </ul>
                         </div>
                         <p class=" text-sm text-gray-600 text-white font-lato">
-                          CRUD Email Submission is a dynamic web application
-                          designed to streamline the process of collecting and
-                          managing user emails. With a user-friendly interface,
-                          it allows visitors to submit their email addresses,
-                          which are then securely stored in a database. The
-                          application also provides administrators with the
-                          ability to perform CRUD operations, enabling efficient
-                          management of the submitted emails for future
-                          communication or analysis.
+                          This project showcases a beautifully designed platform
+                          integrated with the blockchain, Metamask pairing, and
+                          smart contract interaction, enabling users to send
+                          Ethereum, interact with Solidity code, and actively
+                          engage in creating, viewing, and supporting
+                          crowdfunding campaigns directly on the blockchain. By
+                          exploring web3, blockchain technology, and the
+                          mechanics of smart contracts, I gained comprehensive
+                          insights into the underlying functionalities of these
+                          concepts which proved invaulable for this project.
                         </p>
                         <button className="text-white float-right font-lato">
                           View Live Site

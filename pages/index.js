@@ -17,6 +17,7 @@ import metrix from "..//public/metrix.png";
 import game from "..//public/game.png";
 import cloth from "..//public/cloth.png";
 import pfp from "..//public/juwan.jpg";
+import Modal from "../components/modal/Modal";
 
 /** TODO:
  * Create AWS S3 bucket for resume + link to site
@@ -209,6 +210,7 @@ export default function Home() {
                         <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
+                        <Modal />
                       </div>
                     </div>
                   </div>

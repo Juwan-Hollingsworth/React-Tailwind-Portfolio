@@ -20,6 +20,9 @@ import pfp from "..//public/juwan.jpg";
 import Modal from "../components/modal/Modal";
 import crowdfunding from "..//public/crowdfunding.png";
 
+import { useState } from "react";
+import projectData from "../components/modal/ProjectData";
+
 /** TODO:
  * Create AWS S3 bucket for resume + link to site
  * Ensure UI is compatible on all viewports
@@ -29,6 +32,18 @@ import crowdfunding from "..//public/crowdfunding.png";
  */
 
 export default function Home() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  // Function to handle opening the modal and setting the selected project
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  // Function to handle closing the modal
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <div>
       <Head id="top">
@@ -211,7 +226,18 @@ export default function Home() {
                         <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
-                        <Modal />
+                        {/* Render the Modal components */}
+                        {projectData.map((project) => (
+                          <Modal
+                            key={project.id}
+                            title={project.title}
+                            desc={project.description}
+                            projectLink={project.projectLink}
+                            githubRepo={project.githubRepo}
+                            showModal={selectedProject === project}
+                            setShowModal={handleCloseModal}
+                          />
+                        ))}
                       </div>
                     </div>
                   </div>

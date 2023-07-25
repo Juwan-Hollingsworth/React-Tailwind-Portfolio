@@ -174,7 +174,7 @@ export default function Home() {
                         />
                         <div class="portfolio-hover"></div>
                       </div>
-                      <div class="px-1 py-4">
+                      <div class="px-1 py-4 flex flex-col items-center">
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
                           Duda Agency Site
                         </h5>
@@ -182,11 +182,11 @@ export default function Home() {
                           {" "}
                           <ul
                             id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
+                            className="list-none flex flex-wrap gap-4 justify-center "
                           >
-                            <li className="flex items-center py-1">
+                            <li className="flex items-center py-2">
                               <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
+                                <span className="text-gray-600 font-semibold text-sm ">
                                   UX/UI DESIGN + IMPLEMENT
                                 </span>
                               </div>
@@ -194,7 +194,7 @@ export default function Home() {
                           </ul>
                         </div>
 
-                        <p class=" text-sm text-gray-600 text-white font-lato">
+                        <p class=" text-md text-white font-lato pb-4 text-center">
                           Modern website redesign for Spark Social, showcasing
                           my expertise in user experience design and my ability
                           to create effective designs that enhance brands'
@@ -209,7 +209,7 @@ export default function Home() {
                               id="portfolio_btns"
                               onClick={() =>
                                 handleOpenModal(
-                                  projectData.find((p) => p.id === 1)
+                                  projectData.find((p) => p.id === 2)
                                 )
                               }
                             >
@@ -242,41 +242,46 @@ export default function Home() {
                         />
                         <div class="portfolio-hover"></div>
                       </div>
-                      <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
+                      <div class="px-1 py-4 ">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
                           Responsive GPT3 Site
                         </h5>
-                        <div className="flex">
-                          {" "}
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
-                          >
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
-                                  FRONT-END
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <p class=" text-sm text-gray-600 text-white font-lato">
+
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center justify-center py-2">
+                            <div className=" bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FRONT-END
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+
+                        <p class=" text-md text-white font-lato pb-4 text-center">
                           Captivating web application demonstrating the seamless
                           integration of JavaScript, React, and CSS to create an
                           interactive and adaptive website.
                         </p>
 
+                        <div></div>
+
                         {/* Button for project with id: 2 */}
-                        <button
-                          className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                          id="portfolio_btns"
-                          onClick={() =>
-                            handleOpenModal(projectData.find((p) => p.id === 2))
-                          }
-                        >
-                          View Project Details
-                        </button>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 3)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -291,37 +296,42 @@ export default function Home() {
                         <div class="portfolio-hover"></div>
                       </div>
                       <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
                           Banking Application
-                        </h5>
-                        <div className="flex">
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
-                          >
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
-                                  FULL-STACK
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <p class=" text-sm text-gray-600 text-white font-lato">
-                          The Banking App project is a fully functional web
-                          application developed using JavaScript, React, HTML,
-                          and CSS. It offers a secure login system to store user
-                          credentials and provides a user-friendly interface for
-                          performing basic banking operations such as balance
-                          inquiries, fund transfers, and transaction history
-                          tracking. This project showcases my skills in
-                          front-end development and demonstrates my ability to
-                          create robust and interactive applications.
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FULL-STACK
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          Fully functional web application developed with
+                          JavaScript, React, HTML, and CSS, offering secure
+                          login and user-friendly interface for basic banking
+                          operations, demonstrating strong front-end development
+                          skills in creating robust and interactive
+                          applications.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 4)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -336,46 +346,47 @@ export default function Home() {
                         <div class="portfolio-hover"></div>
                       </div>
                       <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
                           Social Media Metrics
-                        </h5>
-                        <div className="flex">
-                          {" "}
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
-                          >
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
-                                  FULL-STACK
-                                </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-yellow-400 rounded-md p-2">
-                                <span className="text-white font-semibold">
-                                  WIP 🚨
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <p class=" text-sm text-gray-600 text-white font-lato">
-                          The Social Media Metrics App is a powerful tool
-                          designed to provide users with comprehensive analytics
-                          and insights into their social media performance. With
-                          real-time data tracking and visualizations, it offers
-                          a user-friendly interface for monitoring key metrics
-                          such as engagement, follower growth, and post reach
-                          across multiple platforms. This project showcases my
-                          ability to develop data-driven applications that
-                          empower individuals and businesses to optimize their
-                          social media strategies for maximum impact.
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FULL-STACK
+                              </span>
+                            </div>
+                          </li>
+                          <li className="flex items-center py-1">
+                            <div className="flex items-center justify-center bg-yellow-400 rounded-md p-2">
+                              <span className="text-white font-semibold">
+                                WIP 🚨
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class="text-md text-white font-lato pb-4 text-center">
+                          Data-driven, user-friendly software engineering
+                          project providing comprehensive analytics and
+                          real-time insights to optimize social media
+                          performance.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 5)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -390,38 +401,40 @@ export default function Home() {
                         <div class="portfolio-hover"></div>
                       </div>
                       <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
                           In-Browser Game
-                        </h5>
-                        <div className="flex">
-                          {" "}
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
-                          >
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
-                                  FRONT-END
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <p class=" text-sm text-gray-600 text-white font-lato">
-                          The In-Browser Game is a dynamic web application built
-                          with React, JavaScript, and Node.js, aimed at
-                          providing an interactive gaming experience. Leveraging
-                          the DOM, the game effectively manipulates data and
-                          implements game logic to create an engaging user
-                          experience. The application showcases my skills in
-                          front-end development, utilizing React for building
-                          responsive user interfaces, while the back-end powered
-                          by Node.js handles the game logic and data management.
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FRONT-END
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          In-browser interactive web application using React,
+                          JavaScript, and Node.js, utilizing front-end
+                          technologies to deliver an engaging gaming experience
+                          with dynamic data manipulation and game logic.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 6)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -436,39 +449,42 @@ export default function Home() {
                         <div class="portfolio-hover"></div>
                       </div>
                       <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
-                          Web3 Blockchain Crowdfunding Platform
-                        </h5>
-                        <div className="flex">
-                          {" "}
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4"
-                          >
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-500 font-semibold">
-                                  FULL-STACK
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <p class=" text-sm text-gray-600 text-white font-lato">
-                          This project showcases a beautifully designed platform
-                          integrated with the blockchain, Metamask pairing, and
-                          smart contract interaction, enabling users to send
-                          Ethereum, interact with Solidity code, and actively
-                          engage in creating, viewing, and supporting
-                          crowdfunding campaigns directly on the blockchain. By
-                          exploring web3, blockchain technology, and the
-                          mechanics of smart contracts, I gained comprehensive
-                          insights into the underlying functionalities of these
-                          concepts which proved invaulable for this project.
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
+                          Web3 Crowdfunding Platform
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FULL-STACK
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          Beautifully designed platform that seamlessly
+                          integrates with blockchain, Metamask pairing, and
+                          smart contract interaction. Enabling users to send
+                          crypto, while actively engaging in creating, viewing,
+                          and supporting crowdfunding campaigns directly on the
+                          blockchain.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 7)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

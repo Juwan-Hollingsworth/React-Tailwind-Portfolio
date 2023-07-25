@@ -34,12 +34,10 @@ import projectData from "../components/modal/ProjectData";
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Function to handle opening the modal and setting the selected project
   const handleOpenModal = (project) => {
     setSelectedProject(project);
   };
 
-  // Function to handle closing the modal
   const handleCloseModal = () => {
     setSelectedProject(null);
   };
@@ -226,18 +224,29 @@ export default function Home() {
                         <button className="text-white float-right font-lato">
                           View Live Site
                         </button>
-                        {/* Render the Modal components */}
-                        {projectData.map((project) => (
-                          <Modal
-                            key={project.id}
-                            title={project.title}
-                            desc={project.description}
-                            projectLink={project.projectLink}
-                            githubRepo={project.githubRepo}
-                            showModal={selectedProject === project}
-                            setShowModal={handleCloseModal}
-                          />
-                        ))}
+                        <div>
+                          {/* Button for project with id: 1 */}
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 1)
+                              )
+                            }
+                          >
+                            Open Modal
+                          </button>
+
+                          {selectedProject && (
+                            <Modal
+                              title={selectedProject.title}
+                              description={selectedProject.description}
+                              skills={selectedProject.skills}
+                              onClose={handleCloseModal}
+                            />
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -299,6 +308,16 @@ export default function Home() {
                         </p>
                         <button className="text-white float-right font-lato">
                           View Live Site
+                        </button>
+                        {/* Button for project with id: 2 */}
+                        <button
+                          className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          id="portfolio_btns"
+                          onClick={() =>
+                            handleOpenModal(projectData.find((p) => p.id === 2))
+                          }
+                        >
+                          Open Modal
                         </button>
                       </div>
                     </div>

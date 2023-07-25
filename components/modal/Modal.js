@@ -1,6 +1,14 @@
 import React from "react";
 
-const Modal = ({ title, description, skills, onClose }) => {
+const Modal = ({
+  title,
+  description,
+  skills,
+  projectLink,
+  projectPic,
+  ghRepo,
+  onClose,
+}) => {
   return (
     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
       <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -17,13 +25,25 @@ const Modal = ({ title, description, skills, onClose }) => {
             </button>
           </div>
           <div className="relative p-6 flex-auto">
+            <img
+              src={projectPic}
+              alt="Project Profile"
+              className="w-40 h-40 object-cover rounded-full mx-auto"
+            />
             <p className="my-4 text-slate-500 text-lg leading-relaxed">
+              <div className="flex justify-center">
+                <div className="flex flex-wrap gap-2">
+                  {skills.map((skill, index) => (
+                    <span
+                      key={index}
+                      className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
               {description}
-              <ul>
-                {skills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
-              </ul>
             </p>
           </div>
           {/*footer*/}
@@ -31,14 +51,18 @@ const Modal = ({ title, description, skills, onClose }) => {
             <button
               className="bg-yellow-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button"
-              onClick={() => setShowModal(false)}
+              onClick={() => {
+                window.open(projectLink, "_blank");
+              }}
             >
               View Live Site
             </button>
             <button
               className="bg-yellow-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button"
-              onClick={() => setShowModal(false)}
+              onClick={() => {
+                window.open(ghRepo, "_blank");
+              }}
             >
               Github
             </button>

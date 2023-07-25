@@ -185,64 +185,46 @@ export default function Home() {
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  UI/UX DESIGN
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  UX/UI DESIGN + IMPLEMENT
                                 </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
                               </div>
                             </li>
                           </ul>
                         </div>
 
                         <p class=" text-sm text-gray-600 text-white font-lato">
-                          Spark Social's redesign is a visually stunning website
-                          project showcasing my expertise in user experience
-                          design and implementation. Leveraging the Duda
-                          platform, I crafted a seamless and intuitive user
-                          interface, prioritizing functionality and aesthetics
-                          to deliver an engaging user experience. This project
-                          demonstrates my versatility in working with different
-                          platforms and highlights my ability to create
-                          impactful designs that elevate a brand's online
-                          presence.
+                          Modern website redesign for Spark Social, showcasing
+                          my expertise in user experience design and my ability
+                          to create effective designs that enhance brands'
+                          online presence.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+
                         <div>
                           {/* Button for project with id: 1 */}
-                          <button
-                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                            id="portfolio_btns"
-                            onClick={() =>
-                              handleOpenModal(
-                                projectData.find((p) => p.id === 1)
-                              )
-                            }
-                          >
-                            Open Modal
-                          </button>
+                          <div className=" flex justify-center items-center">
+                            <button
+                              className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                              id="portfolio_btns"
+                              onClick={() =>
+                                handleOpenModal(
+                                  projectData.find((p) => p.id === 1)
+                                )
+                              }
+                            >
+                              View Project Details
+                            </button>
+                          </div>
 
                           {selectedProject && (
                             <Modal
                               title={selectedProject.title}
                               description={selectedProject.description}
                               skills={selectedProject.skills}
+                              projectLink={selectedProject.projectLink}
+                              githubRepo={selectedProject.ghRepo}
+                              projectPic={selectedProject.projectPic}
                               onClose={handleCloseModal}
                             />
                           )}
@@ -271,44 +253,20 @@ export default function Home() {
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  Javascript
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  FRONT-END
                                 </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">React</span>
                               </div>
                             </li>
                           </ul>
                         </div>
                         <p class=" text-sm text-gray-600 text-white font-lato">
-                          Responsive GPT3 Site is a dynamic web application I
-                          built as part of my Software Engineering portfolio.
-                          Leveraging the power of JavaScript, React, and CSS,
-                          this project showcases the capabilities of OpenAI's
-                          GPT-3.5 language model by creating an interactive and
-                          adaptive website. Users can engage in natural language
-                          conversations with the site, receiving intelligent
-                          responses generated by GPT-3.5, while the responsive
-                          design ensures an optimal viewing experience across
-                          various devices.
+                          Captivating web application demonstrating the seamless
+                          integration of JavaScript, React, and CSS to create an
+                          interactive and adaptive website.
                         </p>
-                        <button className="text-white float-right font-lato">
-                          View Live Site
-                        </button>
+
                         {/* Button for project with id: 2 */}
                         <button
                           className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -317,7 +275,7 @@ export default function Home() {
                             handleOpenModal(projectData.find((p) => p.id === 2))
                           }
                         >
-                          Open Modal
+                          View Project Details
                         </button>
                       </div>
                     </div>
@@ -337,31 +295,15 @@ export default function Home() {
                           Banking Application
                         </h5>
                         <div className="flex">
-                          {" "}
                           <ul
                             id="portfolio_skills"
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  Javascript
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  FULL-STACK
                                 </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">React</span>
                               </div>
                             </li>
                           </ul>
@@ -404,30 +346,17 @@ export default function Home() {
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  Javascript
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  FULL-STACK
                                 </span>
                               </div>
                             </li>
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Express</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm ">
-                                <span className="text-gray-500">Postgres</span>
+                              <div className="flex items-center justify-center bg-yellow-400 rounded-md p-2">
+                                <span className="text-white font-semibold">
+                                  WIP 🚨
+                                </span>
                               </div>
                             </li>
                           </ul>
@@ -471,25 +400,10 @@ export default function Home() {
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">HTML</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">CSS</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  UI/UX DESIGN
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  FRONT-END
                                 </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Analytics</span>
                               </div>
                             </li>
                           </ul>
@@ -532,25 +446,10 @@ export default function Home() {
                             className="list-none flex flex-wrap gap-4"
                           >
                             <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">React</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">
-                                  Javascript
+                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                                <span className="text-gray-500 font-semibold">
+                                  FULL-STACK
                                 </span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Tailwind</span>
-                              </div>
-                            </li>
-                            <li className="flex items-center py-1">
-                              <div className="flex items-center justify-center bg-white rounded-sm p-1">
-                                <span className="text-gray-500">Thirdweb</span>
                               </div>
                             </li>
                           </ul>

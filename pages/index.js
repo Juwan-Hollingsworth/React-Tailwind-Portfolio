@@ -122,15 +122,28 @@ export default function Home() {
                 creating things that live on the web
               </span>
               , and I've had some pretty cool experiences along the way. My
-              journey began back in high school when I ran a sneaker business
-              and discovered firsthand how digital implementation can transform
-              a business. From there, I taught myself Dreamweaver and continued
-              to build my coding skills. While studying biology and computer
-              science at Clayton State University, I've been fortunate enough to
-              work with some big names in Atlanta such as COX Automotive,
-              MailChimp, and Spark Social. These days, my primary focus is on
-              creating digital experiences and products that are accessible and
-              inclusive for a wide range of clients.
+              journey began back in high school when{" "}
+              <span className="text-yellow-400">
+                I ran an online sneaker business
+              </span>{" "}
+              and discovered first hand how digital implementation can transform
+              a business. From there,{" "}
+              <span className="text-yellow-400">
+                I taught myself Dreamweaver and continued to build my coding
+                skills.
+              </span>{" "}
+              While studying{" "}
+              <span className="text-yellow-400">
+                biology and computer science at Clayton State University
+              </span>{" "}
+              I've been fortunate enough to work with some big names in Atlanta
+              such as COX Automotive, MailChimp, and Spark Social. These days,
+              my primary focus is on{" "}
+              <span className="text-yellow-400">
+                creating digital experiences
+              </span>{" "}
+              and products that are accessible and inclusive for a wide range of
+              clients.
             </p>
           </div>
           <div></div>

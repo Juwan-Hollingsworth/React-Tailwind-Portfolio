@@ -21,7 +21,7 @@ import Modal from "../components/modal/Modal";
 import crowdfunding from "..//public/crowdfunding.png";
 
 import { useState } from "react";
-import projectData from "../components/modal/ProjectData";
+import projectData from "../components/modal/ProjData";
 
 /** TODO:
  

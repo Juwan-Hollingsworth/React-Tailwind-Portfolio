@@ -24,7 +24,7 @@ import { useState } from "react";
 import projectData from "../components/modal/ProjectData";
 
 /** TODO:
- * Create AWS S3 bucket for resume + link to site
+ 
  * Ensure UI is compatible on all viewports
  * Shorten descriptions and fix btn spacing (portfolio)
  * Add modal to portfolio section - dynamic content

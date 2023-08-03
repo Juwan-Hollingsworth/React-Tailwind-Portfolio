@@ -19,6 +19,7 @@ import cloth from "..//public/cloth.png";
 import pfp from "..//public/juwan.jpg";
 import Modal from "../components/modal/Modal";
 import crowdfunding from "..//public/crowdfunding.png";
+import mt4 from "..//public/mt4.png";
 
 import { useState } from "react";
 import projectData from "../components/modal/ProjData";
@@ -492,6 +493,163 @@ export default function Home() {
                             onClick={() =>
                               handleOpenModal(
                                 projectData.find((p) => p.id === 7)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="game" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                    <div class="portfolio-item mx-auto max-w-sm">
+                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
+                        <Image
+                          src={mt4}
+                          className="max-w-full h-auto rounded-lg"
+                        />
+                        <div class="portfolio-hover"></div>
+                      </div>
+                      <div class="px-1 py-4">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
+                          Algorithmic Trading Bot
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FULL-STACK
+                              </span>
+                            </div>{" "}
+                          </li>
+                          <li className="flex items-center py-2">
+                            {" "}
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                AWS CLOUD
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          This project harnesses the power of MetaTrader,
+                          Telegram, and Amazon Web Services to create an
+                          advanced automated trading system.
+                          {/* It seamlessly
+                          analyzes real-time data and efficiently executes
+                          trades using an AWS instance, ensuring scalability and
+                          reliability. Additionally, the system provides trade
+                          alerts and enables users to inquire about trade status
+                          and account information through Telegram integration. */}
+                        </p>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 6)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="game" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                    <div class="portfolio-item mx-auto max-w-sm">
+                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
+                        <Image
+                          src={game}
+                          className="max-w-full h-auto rounded-lg"
+                        />
+                        <div class="portfolio-hover"></div>
+                      </div>
+                      <div class="px-1 py-4">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
+                          Financial Dashboard
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FRONT-END
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          In-browser interactive web application using React,
+                          JavaScript, and Node.js, utilizing front-end
+                          technologies to deliver an engaging gaming experience
+                          with dynamic data manipulation and game logic.
+                        </p>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 6)
+                              )
+                            }
+                          >
+                            View Project Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="game" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+                    <div class="portfolio-item mx-auto max-w-sm">
+                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
+                        <Image
+                          src={game}
+                          className="max-w-full h-auto rounded-lg"
+                        />
+                        <div class="portfolio-hover"></div>
+                      </div>
+                      <div class="px-1 py-4">
+                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
+                          Tweet Stack
+                        </h5>{" "}
+                        <ul
+                          id="portfolio_skills"
+                          className="list-none flex flex-wrap gap-4 justify-center "
+                        >
+                          <li className="flex items-center py-2">
+                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
+                              <span className="text-gray-600 font-semibold text-sm ">
+                                FRONT-END
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class=" text-md text-white font-lato pb-4 text-center">
+                          In-browser interactive web application using React,
+                          JavaScript, and Node.js, utilizing front-end
+                          technologies to deliver an engaging gaming experience
+                          with dynamic data manipulation and game logic.
+                        </p>
+                        <div className=" flex justify-center items-center">
+                          <button
+                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            id="portfolio_btns"
+                            onClick={() =>
+                              handleOpenModal(
+                                projectData.find((p) => p.id === 6)
                               )
                             }
                           >

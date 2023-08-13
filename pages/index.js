@@ -23,6 +23,7 @@ import mt4 from "..//public/mt4.png";
 
 import { useState } from "react";
 import projectData from "../components/modal/ProjData";
+import finance from "../public/finance-dash.png";
 
 /** TODO:
  
@@ -177,6 +178,12 @@ export default function Home() {
                   </div>
                 </div>
 
+                <div className=" grid grid-cols-3 gap-4" id="port-row1">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                </div>
+
                 <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
                   <div id="spark" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
                     <div class="portfolio-item mx-auto max-w-sm">
@@ -190,7 +197,7 @@ export default function Home() {
                       </div>
                       <div class="px-1 py-4 flex flex-col items-center">
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase">
-                          Duda Agency Site
+                          Marketing Agency Site
                         </h5>
                         <div className="flex">
                           {" "}
@@ -208,11 +215,10 @@ export default function Home() {
                           </ul>
                         </div>
 
-                        <p class=" text-md text-white font-lato pb-4 text-center">
+                        <p class=" text-md text-white font-lato pb-4 text-center ">
                           Modern website redesign for Spark Social, showcasing
-                          my expertise in user experience design and my ability
-                          to create effective designs that enhance brands'
-                          online presence.
+                          my expertise in user experience design and my
+                          ability...
                         </p>
 
                         <div>
@@ -256,7 +262,7 @@ export default function Home() {
                         />
                         <div class="portfolio-hover"></div>
                       </div>
-                      <div class="px-1 py-4 ">
+                      <div class="px-1 py-4 flex flex-col items-center ">
                         <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
                           Responsive GPT3 Site
                         </h5>
@@ -274,10 +280,9 @@ export default function Home() {
                           </li>
                         </ul>
 
-                        <p class=" text-md text-white font-lato pb-4 text-center">
+                        <p class=" text-md text-white font-lato text-center pb-4">
                           Captivating web application demonstrating the seamless
-                          integration of JavaScript, React, and CSS to create an
-                          interactive and adaptive website.
+                          integration of JavaScript, React, and CSS to create...
                         </p>
 
                         <div></div>
@@ -328,10 +333,7 @@ export default function Home() {
                         <p class=" text-md text-white font-lato pb-4 text-center">
                           Fully functional web application developed with
                           JavaScript, React, HTML, and CSS, offering secure
-                          login and user-friendly interface for basic banking
-                          operations, demonstrating strong front-end development
-                          skills in creating robust and interactive
-                          applications.
+                          login and...
                         </p>
                         <div className=" flex justify-center items-center">
                           <button
@@ -385,8 +387,7 @@ export default function Home() {
                         <p class="text-md text-white font-lato pb-4 text-center">
                           Data-driven, user-friendly software engineering
                           project providing comprehensive analytics and
-                          real-time insights to optimize social media
-                          performance.
+                          real-time insights to optimize...
                         </p>
                         <div className=" flex justify-center items-center">
                           <button
@@ -433,8 +434,7 @@ export default function Home() {
                         <p class=" text-md text-white font-lato pb-4 text-center">
                           In-browser interactive web application using React,
                           JavaScript, and Node.js, utilizing front-end
-                          technologies to deliver an engaging gaming experience
-                          with dynamic data manipulation and game logic.
+                          technologies to...
                         </p>
                         <div className=" flex justify-center items-center">
                           <button
@@ -481,10 +481,7 @@ export default function Home() {
                         <p class=" text-md text-white font-lato pb-4 text-center">
                           Beautifully designed platform that seamlessly
                           integrates with blockchain, Metamask pairing, and
-                          smart contract interaction. Enabling users to send
-                          crypto, while actively engaging in creating, viewing,
-                          and supporting crowdfunding campaigns directly on the
-                          blockchain.
+                          smart contract interaction...
                         </p>
                         <div className=" flex justify-center items-center">
                           <button
@@ -539,7 +536,7 @@ export default function Home() {
                         <p class=" text-md text-white font-lato pb-4 text-center">
                           This project harnesses the power of MetaTrader,
                           Telegram, and Amazon Web Services to create an
-                          advanced automated trading system.
+                          advanced automated...
                           {/* It seamlessly
                           analyzes real-time data and efficiently executes
                           trades using an AWS instance, ensuring scalability and
@@ -568,7 +565,7 @@ export default function Home() {
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
-                          src={game}
+                          src={finance}
                           className="max-w-full h-auto rounded-lg"
                         />
                         <div class="portfolio-hover"></div>
@@ -592,56 +589,7 @@ export default function Home() {
                         <p class=" text-md text-white font-lato pb-4 text-center">
                           In-browser interactive web application using React,
                           JavaScript, and Node.js, utilizing front-end
-                          technologies to deliver an engaging gaming experience
-                          with dynamic data manipulation and game logic.
-                        </p>
-                        <div className=" flex justify-center items-center">
-                          <button
-                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                            id="portfolio_btns"
-                            onClick={() =>
-                              handleOpenModal(
-                                projectData.find((p) => p.id === 6)
-                              )
-                            }
-                          >
-                            View Project Details
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="game" class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-                    <div class="portfolio-item mx-auto max-w-sm">
-                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
-                        <Image
-                          src={game}
-                          className="max-w-full h-auto rounded-lg"
-                        />
-                        <div class="portfolio-hover"></div>
-                      </div>
-                      <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
-                          Tweet Stack
-                        </h5>{" "}
-                        <ul
-                          id="portfolio_skills"
-                          className="list-none flex flex-wrap gap-4 justify-center "
-                        >
-                          <li className="flex items-center py-2">
-                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                              <span className="text-gray-600 font-semibold text-sm ">
-                                FRONT-END
-                              </span>
-                            </div>
-                          </li>
-                        </ul>
-                        <p class=" text-md text-white font-lato pb-4 text-center">
-                          In-browser interactive web application using React,
-                          JavaScript, and Node.js, utilizing front-end
-                          technologies to deliver an engaging gaming experience
-                          with dynamic data manipulation and game logic.
+                          technologies to deliver...
                         </p>
                         <div className=" flex justify-center items-center">
                           <button

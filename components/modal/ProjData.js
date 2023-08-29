@@ -3,14 +3,16 @@ import spark from "../../public/spark.png";
 import gpt3 from "../../public/gpt3.png";
 import bank from "../../public/hsfinancial.png";
 import metrix from "../../public/metrix.png";
+import spk from "../../public/spk.png";
 const projectData = [
   {
     id: 1,
-    title: "Agency Design & Implement",
+    title: "Marketing Agency Design & Implement.",
     description:
-      "Spark Social's redesign is a visually stunning website project showcasing my expertise in user experience design and implementation. Leveraging the Duda platform, I crafted a seamless and intuitive user interface, prioritizing functionality and aesthetics to deliver an engaging user experience. This project demonstrates my versatility in working with different platforms and highlights my ability to create impactful designs that elevate a brand's online presence.",
-    skills: ["ZTML", "CSS", "JavaScript", "React", "Next.js"],
-    projectPic: "https://rb.gy/9jh39",
+      "The redesign of Spark Social's website highlights my user experience design skills as well as the ability to develop in different technical settings. Using Javascript, React, and Figma, I created a functional and visually appealing interface that showcases my versatility and ability to enhance brand online presence.",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+    projectPic:
+      "https://i.imgur.com/BMIqhVP_d.webp?maxwidth=1520&fidelity=grand",
     githubRepo: "https://github.com/",
     projectLink: "https://www.sparksocial.agency",
   },
@@ -25,6 +27,7 @@ const projectData = [
       "https://github.com/Juwan-Hollingsworth/Figma-To-Responsive-Site",
     projectLink: "https://gpt3-responsive.netlify.app/",
   },
+
   {
     id: 3,
     title: "Banking Application",

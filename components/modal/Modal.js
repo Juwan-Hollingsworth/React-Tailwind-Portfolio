@@ -25,11 +25,7 @@ const Modal = ({
             </button>
           </div>
           <div className="relative p-6 flex-auto">
-            <img
-              src={projectPic}
-              alt="Project Profile"
-              className="w-40 h-40 object-cover rounded-full mx-auto"
-            />
+            <img src={projectPic} alt="Project Profile" className="" />
             <p className="my-4 text-slate-500 text-lg leading-relaxed">
               <div className="flex justify-center">
                 <div className="flex flex-wrap gap-2">

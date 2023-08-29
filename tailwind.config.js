@@ -6,12 +6,19 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xsm: "350px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      iphone: { max: "480px" }, // iPhone 12 portrait width
+      // => @media (max-width: 389px) { ... }
+
+      tablet: { min: "481px" },
+      // => @media (max-width: 768px) { ... }
+
+      laptop: { min: "768px" },
+      // => @media (max-width: 1023px) { ... }
+
+      desktop: { min: "1025px" },
+      // => @media (min-width: 1026px) { ... }
     },
+
     extend: {
       fontFamily: {
         burtons: "burtons",

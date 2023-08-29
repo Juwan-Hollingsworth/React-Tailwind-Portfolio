@@ -106,50 +106,59 @@ export default function Home() {
         </section>
         {/* About Section */}
         <section className="py-10 pt-40">
-          <h1 class="text-3xl md:text-4xl mb-4 text-white text-center font-latoBold">
-            Meet the developer 👋🏾,
-          </h1>
-          <div className="flex flex-col md:flex-row justify-center">
-            <span className="mr-4 py-3">
-              <Image src={pfp} className="rounded-lg " />
-            </span>
-
-            <p className="text-md py-2 leading-8 text-white font-lato">
-              Hi there, I'm Juwan, a{" "}
-              <span className="text-yellow-400">software engineer</span> and
-              college graduate with a bachelor's in{" "}
-              <span className="text-yellow-400">Computer Science</span>. I'm
-              passionate about{" "}
-              <span className="text-yellow-400">
-                creating things that live on the web
-              </span>
-              , and I've had some pretty cool experiences along the way. My
-              journey began back in high school when{" "}
-              <span className="text-yellow-400">
-                I ran an online sneaker business
-              </span>{" "}
-              and discovered first hand how digital implementation can transform
-              a business. From there,{" "}
-              <span className="text-yellow-400">
-                I taught myself Dreamweaver and continued to build my coding
-                skills.
-              </span>{" "}
-              While studying{" "}
-              <span className="text-yellow-400">
-                biology and computer science at Clayton State University
-              </span>{" "}
-              I've been fortunate enough to work with some big names in Atlanta
-              such as COX Automotive, MailChimp, and Spark Social. These days,
-              my primary focus is on{" "}
-              <span className="text-yellow-400">
-                creating digital experiences
-              </span>{" "}
-              and products that are accessible and inclusive for a wide range of
-              clients.
-            </p>
+          <div>
+            <h1 class="text-3xl mb-16 text-white text-center font-latoBold">
+              Meet the developer 👋🏾,
+            </h1>
+            <div class="grid grid-cols-2 gap-0 iphone:grid-cols-1">
+              <div class="">
+                <div>
+                  <Image src={pfp} className="rounded-lg w-[600px] mx-auto" />
+                </div>
+              </div>
+              <div class="flex-grow">
+                <p className="text-[24px] py-2 leading-8 text-white font-lato w-[600px] my-auto iphone:text-[16px] iphone:w-[400px] iphone:pt-8">
+                  Hi there, I'm Juwan, a{" "}
+                  <span className="text-yellow-400">software engineer</span> and
+                  college graduate with a bachelor's in{" "}
+                  <span className="text-yellow-400">Computer Science</span>.{" "}
+                  <br />
+                  <br /> I'm passionate about{" "}
+                  <span className="text-yellow-400">
+                    creating things that live on the web
+                  </span>
+                  , and I've had some pretty cool experiences along the way. My
+                  journey began back in high school when{" "}
+                  <span className="text-yellow-400">
+                    I ran an online sneaker business
+                  </span>{" "}
+                  and discovered first hand how digital implementation can
+                  transform a business. <br />
+                  <br /> From there,{" "}
+                  <span className="text-yellow-400">
+                    I taught myself Dreamweaver and continued to build my coding
+                    skills.
+                  </span>{" "}
+                  While studying{" "}
+                  <span className="text-yellow-400">
+                    biology and computer science at Clayton State University
+                  </span>{" "}
+                  I've been fortunate enough to work with some big names in
+                  Atlanta such as COX Automotive, MailChimp, and Spark Social.
+                  <br />
+                  <br />
+                  These days, my primary focus is on{" "}
+                  <span className="text-yellow-400">
+                    creating digital experiences
+                  </span>{" "}
+                  and products that are accessible and inclusive for a wide
+                  range of clients.
+                </p>
+              </div>
+            </div>
           </div>
-          <div></div>
         </section>
+
         {/* portfolio section */}
         <section className="py-10 pt-10">
           <div>
@@ -229,7 +238,7 @@ export default function Home() {
                               id="portfolio_btns"
                               onClick={() =>
                                 handleOpenModal(
-                                  projectData.find((p) => p.id === 2)
+                                  projectData.find((p) => p.id === 1)
                                 )
                               }
                             >
@@ -294,7 +303,7 @@ export default function Home() {
                             id="portfolio_btns"
                             onClick={() =>
                               handleOpenModal(
-                                projectData.find((p) => p.id === 3)
+                                projectData.find((p) => p.id === 2)
                               )
                             }
                           >
@@ -341,7 +350,7 @@ export default function Home() {
                             id="portfolio_btns"
                             onClick={() =>
                               handleOpenModal(
-                                projectData.find((p) => p.id === 4)
+                                projectData.find((p) => p.id === 3)
                               )
                             }
                           >

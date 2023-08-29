@@ -110,20 +110,23 @@ export default function Home() {
             <h1 class="text-3xl mb-16 text-white text-center font-latoBold">
               Meet the developer 👋🏾,
             </h1>
-            <div class="grid grid-cols-2 gap-0 iphone:grid-cols-1">
+            <div class="grid grid-cols-2 gap-0 iphone:grid-cols-1 tablet:grid-cols-1">
               <div class="">
                 <div>
-                  <Image src={pfp} className="rounded-lg w-[600px] mx-auto" />
+                  <Image
+                    src={pfp}
+                    className="rounded-lg w-[600px] mx-auto iphone:w-[75%] tablet:w-[75%]"
+                  />
                 </div>
               </div>
               <div class="flex-grow">
-                <p className="text-[24px] py-2 leading-8 text-white font-lato w-[600px] my-auto iphone:text-[16px] iphone:w-[400px] iphone:pt-8">
+                <p className="text-[24px] py-2 leading-8 text-white font-lato w-[600px] my-auto iphone:mx-auto iphone:text-[16px] iphone:w-[85%] iphone:pt-8 tablet:text-[16px] tablet:w-[75%] tablet:mx-auto">
                   Hi there, I'm Juwan, a{" "}
                   <span className="text-yellow-400">software engineer</span> and
                   college graduate with a bachelor's in{" "}
                   <span className="text-yellow-400">Computer Science</span>.{" "}
                   <br />
-                  <br /> I'm passionate about{" "}
+                  <br className="tablet:hidden" /> I'm passionate about{" "}
                   <span className="text-yellow-400">
                     creating things that live on the web
                   </span>
@@ -134,7 +137,7 @@ export default function Home() {
                   </span>{" "}
                   and discovered first hand how digital implementation can
                   transform a business. <br />
-                  <br /> From there,{" "}
+                  <br className="tablet:hidden" /> From there,{" "}
                   <span className="text-yellow-400">
                     I taught myself Dreamweaver and continued to build my coding
                     skills.
@@ -146,7 +149,7 @@ export default function Home() {
                   I've been fortunate enough to work with some big names in
                   Atlanta such as COX Automotive, MailChimp, and Spark Social.
                   <br />
-                  <br />
+                  <br className="tablet:hidden" />
                   These days, my primary focus is on{" "}
                   <span className="text-yellow-400">
                     creating digital experiences
@@ -631,7 +634,7 @@ export default function Home() {
                 height={100}
                 style={{ display: "inline" }}
               />
-              <h1 className="md:text-8xl lg:text-8xl xsm:text-6xl text-white">
+              <h1 className="tablet:text-8xl laptop:text-8xl iphone:text-6xl text-white">
                 + 👨🏾‍💻
               </h1>
             </div>

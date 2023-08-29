@@ -359,179 +359,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
-                <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
-                  <div
-                    id="spark"
-                    class="iphone:px-6 iphone:w-1/2 desktop:w-1/3 mt-8"
-                  >
-                    <div class="portfolio-item mx-auto max-w-sm">
-                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
-                        <Image
-                          id="portfolio"
-                          src={spark}
-                          className="max-w-full h-auto rounded-lg"
-                        />
-                        <div class="portfolio-hover"></div>
-                      </div>
-                      <div class="px-1 py-4 flex flex-col items-center">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase">
-                          Marketing Agency Site
-                        </h5>
-                        <div className="flex">
-                          {" "}
-                          <ul
-                            id="portfolio_skills"
-                            className="list-none flex flex-wrap gap-4 justify-center "
-                          >
-                            <li className="flex items-center py-2">
-                              <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                                <span className="text-gray-600 font-semibold text-sm ">
-                                  UX/UI DESIGN + IMPLEMENT
-                                </span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <p class=" text-md text-white font-lato pb-4 text-center ">
-                          Modern website redesign for Spark Social, showcasing
-                          my expertise in user experience design and my
-                          ability...
-                        </p>
-
-                        <div>
-                          {/* Button for project with id: 1 */}
-                          <div className=" flex justify-center items-center">
-                            <button
-                              className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                              id="portfolio_btns"
-                              onClick={() =>
-                                handleOpenModal(
-                                  projectData.find((p) => p.id === 1)
-                                )
-                              }
-                            >
-                              View Project Details
-                            </button>
-                          </div>
-
-                          {selectedProject && (
-                            <Modal
-                              title={selectedProject.title}
-                              description={selectedProject.description}
-                              skills={selectedProject.skills}
-                              projectLink={selectedProject.projectLink}
-                              githubRepo={selectedProject.ghRepo}
-                              projectPic={selectedProject.projectPic}
-                              onClose={handleCloseModal}
-                            />
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="gpt3" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
-                    <div class="portfolio-item mx-auto max-w-sm">
-                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
-                        <Image
-                          src={gpt3}
-                          className="max-w-full h-auto rounded-lg"
-                        />
-                        <div class="portfolio-hover"></div>
-                      </div>
-                      <div class="px-1 py-4 flex flex-col items-center ">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
-                          Responsive GPT3 Site
-                        </h5>
-
-                        <ul
-                          id="portfolio_skills"
-                          className="list-none flex flex-wrap gap-4 justify-center "
-                        >
-                          <li className="flex items-center justify-center py-2">
-                            <div className=" bg-gray-100 rounded-md p-2">
-                              <span className="text-gray-600 font-semibold text-sm ">
-                                FRONT-END
-                              </span>
-                            </div>
-                          </li>
-                        </ul>
-
-                        <p class=" text-md text-white font-lato text-center pb-4">
-                          Captivating web application demonstrating the seamless
-                          integration of JavaScript, React, and CSS to create...
-                        </p>
-
-                        <div></div>
-
-                        {/* Button for project with id: 2 */}
-                        <div className=" flex justify-center items-center">
-                          <button
-                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                            id="portfolio_btns"
-                            onClick={() =>
-                              handleOpenModal(
-                                projectData.find((p) => p.id === 2)
-                              )
-                            }
-                          >
-                            View Project Details
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="bank" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
-                    <div class="portfolio-item mx-auto max-w-sm">
-                      <div class="portfolio-img relative overflow-hidden cursor-pointer">
-                        <Image
-                          src={bank}
-                          className="max-w-full h-auto rounded-lg"
-                        />
-                        <div class="portfolio-hover"></div>
-                      </div>
-                      <div class="px-1 py-4">
-                        <h5 class="font-semibold text-xl text-yellow-400 uppercase text-center">
-                          Banking Application
-                        </h5>{" "}
-                        <ul
-                          id="portfolio_skills"
-                          className="list-none flex flex-wrap gap-4 justify-center "
-                        >
-                          <li className="flex items-center py-2">
-                            <div className="flex items-center justify-center bg-gray-100 rounded-md p-2">
-                              <span className="text-gray-600 font-semibold text-sm ">
-                                FULL-STACK
-                              </span>
-                            </div>
-                          </li>
-                        </ul>
-                        <p class=" text-md text-white font-lato pb-4 text-center">
-                          Fully functional web application developed with
-                          JavaScript, React, HTML, and CSS, offering secure
-                          login and...
-                        </p>
-                        <div className=" flex justify-center items-center">
-                          <button
-                            className="bg-yellow-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                            id="portfolio_btns"
-                            onClick={() =>
-                              handleOpenModal(
-                                projectData.find((p) => p.id === 3)
-                              )
-                            }
-                          >
-                            View Project Details
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="metrix" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
+                <div
+                  className=" pt-8 desktop:grid desktop:grid-cols-3 desktop:gap-4 laptop:grid laptop:grid-cols-3 laptop:gap-4 tablet:grid tablet:grid-cols-1 tablet:gap-0  iphone:grid iphone:grid-cols-1 iphone:gap-0 "
+                  id="port-row2"
+                >
+                  <div id="metrix" class="">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -585,7 +417,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div id="game" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
+                  <div id="game" class="">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -632,7 +464,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div id="cloth" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
+                  <div id="web3" class="">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -678,8 +510,13 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div id="game" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
+                <div
+                  className=" pt-8 desktop:grid desktop:grid-cols-3 desktop:gap-4 laptop:grid laptop:grid-cols-3 laptop:gap-4 tablet:grid tablet:grid-cols-1 tablet:gap-0  iphone:grid iphone:grid-cols-1 iphone:gap-0 "
+                  id="port-row3"
+                >
+                  <div id="trading" class="">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image
@@ -739,8 +576,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-
-                  <div id="game" class="sm:px-6 sm:w-1/2 desktop:w-1/3 mt-8">
+                  <div id="findashb" class="">
                     <div class="portfolio-item mx-auto max-w-sm">
                       <div class="portfolio-img relative overflow-hidden cursor-pointer">
                         <Image

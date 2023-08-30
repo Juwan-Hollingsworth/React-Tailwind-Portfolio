@@ -46,17 +46,19 @@ const projectData = [
     description:
       "The Social Media Metrics App is a powerful tool designed to provide users with comprehensive analytics and insights into their social media performance. With real-time data tracking and visualizations, it offers a user-friendly interface for monitoring key metrics such as engagement, follower growth, and post reach across multiple platforms. This project showcases my ability to develop data-driven applications that empower individuals and businesses to optimize their social media strategies for maximum impact.",
     skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-    projectPic: "https://rb.gy/9jh39",
+    projectPic:
+      "https://i.imgur.com/U3em2hS_d.webp?maxwidth=760&fidelity=grand",
     githubRepo: "https://github.com/",
     projectLink: "https://rb.gy/9jh39",
   },
   {
     id: 5,
-    title: "Twitter Clone",
+    title: "In-browser Game",
     description:
       "CRUD Email Submission is a dynamic web application designed to streamline the process of collecting and managing user emails. With a user-friendly interface, it allows visitors to submit their email addresses, which are then securely stored in a database. The application also provides administrators with the ability to perform CRUD operations, enabling efficient management of the submitted emails for future communication or analysis.",
     skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-    projectPic: "https://rb.gy/9jh39",
+    projectPic:
+      "https://i.imgur.com/U7tO5nr_d.webp?maxwidth=760&fidelity=grand",
     projectLink: "https://rb.gy/9jh39",
     ghRepo: "https://rb.gy/9jh39",
   },
@@ -66,7 +68,8 @@ const projectData = [
     description:
       "The Social Media Metrics App is a powerful tool designed to provide users with comprehensive analytics and insights into their social media performance. With real-time data tracking and visualizations, it offers a user-friendly interface for monitoring key metrics such as engagement, follower growth, and post reach across multiple platforms. This project showcases my ability to develop data-driven applications that empower individuals and businesses to optimize their social media strategies for maximum impact.",
     skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-    projectPic: "https://rb.gy/9jh39",
+    projectPic:
+      "https://i.imgur.com/MR06TBB_d.webp?maxwidth=760&fidelity=grand",
     githubRepo: "https://github.com/",
     projectLink: "https://rb.gy/9jh39",
   },

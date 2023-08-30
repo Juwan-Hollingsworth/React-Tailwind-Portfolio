@@ -406,7 +406,7 @@ export default function Home() {
                             id="portfolio_btns"
                             onClick={() =>
                               handleOpenModal(
-                                projectData.find((p) => p.id === 5)
+                                projectData.find((p) => p.id === 4)
                               )
                             }
                           >
@@ -453,7 +453,7 @@ export default function Home() {
                             id="portfolio_btns"
                             onClick={() =>
                               handleOpenModal(
-                                projectData.find((p) => p.id === 6)
+                                projectData.find((p) => p.id === 5)
                               )
                             }
                           >
@@ -500,7 +500,7 @@ export default function Home() {
                             id="portfolio_btns"
                             onClick={() =>
                               handleOpenModal(
-                                projectData.find((p) => p.id === 7)
+                                projectData.find((p) => p.id === 6)
                               )
                             }
                           >
